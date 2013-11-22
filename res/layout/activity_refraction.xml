@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" 
+    android:background="@drawable/menu"
+    >
+
+    <RelativeLayout
+        android:id="@+id/dateselect"
+        android:layout_width="160dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btn_jia_1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_grey"
+            android:text="+" />
+
+        <com.example.display_coating.views.WheelView
+            android:id="@+id/wv_refraction1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_jian_1"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_jia_1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btn_jian_1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_style_grey"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btn_jia_2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_jia_1"
+            android:background="@drawable/btn_style_grey"
+            android:text="+" />
+
+        <com.example.display_coating.views.WheelView
+            android:id="@+id/wv_ray1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_jian_2"
+            android:layout_below="@+id/btn_jia_2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/wv_refraction1" />
+
+        <Button
+            android:id="@+id/btn_jian_2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_jian_1"
+            android:background="@drawable/btn_style_grey"
+            android:text="-" />
+
+       
+        
+        
+    </RelativeLayout>
+
+    
+     <ImageView 
+            android:id="@+id/iv_left"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+             android:layout_toRightOf="@+id/dateselect"
+             android:layout_centerVertical="true"
+             android:background="@android:color/white"
+            />
+    
+     <ImageView 
+            android:id="@+id/iv_right"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+             android:layout_toLeftOf="@+id/dateselect2"
+             android:layout_centerVertical="true"
+             android:background="@android:color/black"
+            />
+    
+    <RelativeLayout
+        android:id="@+id/dateselect2"
+        android:layout_width="160dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btn_jia_3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_grey"
+            android:text="+" />
+
+        <com.example.display_coating.views.WheelView
+            android:id="@+id/wv_ray2"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_jian_3"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_jia_3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btn_jian_3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_style_grey"
+            android:text="-" />
+
+
+        <Button
+            android:id="@+id/btn_jia_4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_jia_3"
+            android:background="@drawable/btn_style_grey"
+             android:layout_alignParentRight="true"
+            android:text="+" />
+
+        <com.example.display_coating.views.WheelView
+            android:id="@+id/wv_refraction2"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_jian_4"
+            android:layout_below="@+id/btn_jia_4"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/wv_ray2" />
+
+        <Button
+            android:id="@+id/btn_jian_4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_jian_3"
+            android:background="@drawable/btn_style_grey"
+            android:layout_alignParentRight="true"
+            android:text="-" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:orientation="vertical"
+     >
+
+    <include layout="@layout/layout_title"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingTop="300dp" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_red"
+            android:text="镜片镀膜图"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_red"
+            android:text="抗辐射防紫外线"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_red"
+            android:text="镀膜与不镀膜镜片对比"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn3"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_red"
+            android:text="镀膜镜片特点展示"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>
